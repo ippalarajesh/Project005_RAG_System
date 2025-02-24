@@ -1,0 +1,51 @@
+{
+    "llama_index": {
+        "index_path": "path/to/llama_index",
+        "vectorizer": "path/to/vectorizer"
+    },
+    "chroma_db": {
+        "db_path": "path/to/chroma_db"
+    },
+    "chatgpt_model": {
+        "api_key": "your_openai_api_key",
+        "model": "gpt-4"
+    },
+    "evaluation": {
+        "metrics": ["accuracy", "relevance", "coherence"]
+    }
+}
+
+
+// Example
+
+{
+    "llama_index": {
+        "index_path": "path/to/llama_index",
+        "vectorizer": "path/to/vectorizer"
+    },
+    "chroma_db": {
+        "db_path": "path/to/chroma_db"
+    },
+    "chatgpt_model": {
+        "api_key": "your_openai_api_key",
+        "model": "gpt-4",
+        "temperature": 0.7
+    },
+    "evaluation": {
+        "metrics": ["accuracy", "relevance", "coherence"],
+        "evaluator_urls": {
+            "deepeval": "https://api.deepeval.com",
+            "ragas": "https://api.ragas.com"
+        }
+    },
+    "logging": {
+        "log_level": "INFO",
+        "log_file": "logs/system.log"
+    },
+    "cache": {
+        "cache_type": "redis",
+        "cache_host": "localhost",
+        "cache_port": 6379
+    }
+}
+
